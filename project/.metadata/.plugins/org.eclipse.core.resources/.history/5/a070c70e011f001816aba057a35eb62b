@@ -1,0 +1,22 @@
+package com.example.tutorial3.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.tutorial3.service.InMemoryStudentService;
+import com.example.tutorial3.service.StudentService;
+
+@Controller
+public class StudentController {
+	private final StudentService studentService;
+
+	public StudentController() {
+		studentService = new InMemoryStudentService();
+	}
+	@RequestMapping("/student/add")
+	public String add() {
+		return "add";
+	}
+	
+	
+}

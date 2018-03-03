@@ -1,0 +1,21 @@
+package com.example.tutorial3.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.example.tutorial3.service.InMemoryStudentService;
+import com.example.tutorial3.service.StudentService;
+
+@Controller
+public class StudentController {
+	private final StudentService studentService;
+
+	public StudentController(StudentService studentService) {
+		this.studentService = new InMemoryStudentService();
+	}
+	
+	public String add() {
+		return "add";
+	}
+	
+	
+}

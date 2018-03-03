@@ -1,0 +1,1 @@
+INDEX VERSION 1.130+/Users/davidelkana/Documents/Kuliah/S2/APAP/tutorial3_1706106671/project/.metadata/.plugins/org.eclipse.jdt.core
